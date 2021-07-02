@@ -68,7 +68,7 @@ button8 = Button(button_frame,text='8',font=('times new roman',12),relief='ridge
 
 button9 = Button(button_frame,text='9',font=('times new roman',12),relief='ridge',bd=1,bg='#ffe6ee',width=8,height=3,command=lambda:press(9))
 
-multiplication = Button(button_frame,text='',font=('times new roman',12),relief='ridge',bd=1,bg='#ffe6ee',width=8,height=3,command=lambda:press(''))
+multiplication = Button(button_frame,text='*',font=('times new roman',12),relief='ridge',bd=1,bg='#ffe6ee',width=8,height=3,command=lambda:press('*'))
 
 button1 = Button(button_frame,text='1',font=('times new roman',12),relief='ridge',bd=1,bg='#ffe6ee',width=8,height=3,command=lambda:press(1))
 
