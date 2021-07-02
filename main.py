@@ -77,10 +77,8 @@ button0.grid(row=5,column=0,columnspan=2)
 decimal.grid(row=5,column=2)
 equal.grid(row=5,column=3)
 
-backspace =
-Button(button_frame,test='DEL',font=('times new roman',12),relief='ridge',bd=1,bg='#ffe6ee',width=8,height=3,command=backspace)
+backspace = Button(button_frame,text='DEL',font=('times new roman',12),relief='ridge',bd=1,bg='#ffe6ee',width=8,height=3,command=backspace)
 backspace.grid(row=1, column=2)
-
 
 
 window.mainloop()
