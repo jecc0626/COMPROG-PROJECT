@@ -10,6 +10,35 @@ window.configure(background='#ff99bb')
 
 window.resizable(width=False,height=False)
 
+expression = ''
+def press(num):
+	global expression
+	
+	expression = expression + str(num)
+	
+	equation.set(expression)
+	
+def equalpress():
+	global expression
+	
+	try: 
+		total = str(eval(expression))
+	
+		equation.set(total)		
+		
+	except:
+		equation.set('Error')
+		expression= ''
+def clear():
+	global expression
+	
+	expression = ''
+	equation.set('0')
+
+def backspace():
+    global expression
+    expression = expression[:-1]
+    equation.set(expression)
 
 button_frame = Frame(window,background='#ff99bb')
 button_frame.pack()
