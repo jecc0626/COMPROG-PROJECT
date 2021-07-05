@@ -86,11 +86,15 @@ class CalculatorGUI:
 
         division = Button(button_frame,text='/',font=('times new roman',12),relief='ridge',bd=1,bg='#ffe6ee',width=8,height=3,command=lambda:press('/'))
 
-        equal = Button(button_frame,text='=',font=('times new roman',12),relief='ridge',bd=1,bg='#ffe6ee',width=8,height=3,command=equalpress) 
+        equal = Button(button_frame,text='=',font=('times new roman',12),relief='ridge',bd=1,bg='#ffe6ee',width=8,height=3,command=equalpress)  
+        
+        backspace = Button(button_frame,text='DEL',font=('times new roman',12),relief='ridge',bd=1,bg='#ffe6ee',width=8,height=3,command=backspace)
+       
 
         expression_field.grid(row=0,column=0,columnspan=4,ipadx=8,ipady=25,pady=15)
 
         clear.grid(row=1,column=0,columnspan=3)
+        backspace.grid(row=1, column=2)
         division.grid(row=1, column=3)
 
         button7.grid(row=2,column=0)
@@ -112,8 +116,6 @@ class CalculatorGUI:
         decimal.grid(row=5,column=2)
         equal.grid(row=5,column=3)
 
-        backspace = Button(button_frame,text='DEL',font=('times new roman',12),relief='ridge',bd=1,bg='#ffe6ee',width=8,height=3,command=backspace)
-        backspace.grid(row=1, column=2)
 
 
         window.mainloop()
